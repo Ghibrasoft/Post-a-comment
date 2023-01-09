@@ -1,0 +1,110 @@
+@import '../variables.scss';
+
+.singleComment_form {
+
+    .singleComment_fieldset {
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        padding: .3rem;
+        transition: $transition;
+        margin-top: 1rem;
+        word-break: break-all;
+
+        &:hover {
+            border: 1px solid $formGeneral-color;
+
+            .icon_btns_div {
+                transition: $transition;
+                opacity: 1;
+            }
+
+            .singleComment_legend {
+                color: #000;
+                transition: $transition;
+
+                .date {
+                    color: #000;
+                    transition: $transition;
+                }
+            }
+        }
+        
+        .edit_input_field {
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            resize: none;
+            background-color: $inputField-color;
+            font-family: $font-Ubuntu;
+            padding: $inputText-padding;
+            transition: $transition;
+
+            &:focus {
+                background-color: #fff;
+                box-shadow: 0 0 5px $formGeneral-color;
+                transition: $transition;
+            }
+        }
+
+        .singleComment_legend {
+            color: #a9a9a9;
+            font-weight: bold;
+            padding: .3rem;
+            transition: $transition;
+
+            .date {
+                font-style: italic;
+                color: #a9a9a9;
+                transition: $transition;
+            }
+        }
+
+        .icon_btns_div {
+            transition: $transition;
+            opacity: 0;
+            margin-top: .5rem;
+
+            .icon_btn {
+                display: inline-flex;
+                cursor: pointer;
+                margin: auto .3rem;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                padding: .2rem .5rem;
+                transition: $transition;
+                background-color: $inputField-color;
+            }
+
+            .reply {
+                transition: $transition;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $formGeneral-color;
+                    transition: $transition;
+                }
+            }
+
+            .edit {
+                transition: $transition;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $editBtn-color;
+                    transition: $transition;
+                }
+            }
+
+            .delete {
+                transition: $transition;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $deleteBtn-color;
+                    transition: $transition;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital@0;1&display=swap"); /* ===== font styling ===== */
+/* ===== transitions ===== */
+/* ===== colors ===== */
+/* ===== div styling ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,124 @@
+@import '../variables.scss';
+
+.replies_div {
+
+    .reply_form {
+        display: flex;
+        width: 500px;
+        height: 100px;
+        margin-top: 1rem;
+
+        .reply_inputs {
+            display: flex;
+            flex-direction: column;
+            gap: .3rem;
+            width: 100%;
+
+            .replier_name_input,
+            .replier_textarea {
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                resize: none;
+                background-color: $inputField-color;
+                font-family: $font-Ubuntu;
+                padding: $inputText-padding;
+                transition: $transition;
+
+                &:focus {
+                    background-color: #fff;
+                    box-shadow: 0 0 5px $formGeneral-color;
+                    transition: $transition;
+                }
+            }
+
+            .replier_textarea {
+                height: 100%;
+            }
+        }
+
+        .addReply_btn {
+            cursor: pointer;
+            background-color: $btn-color;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: $font-Ubuntu;
+            border: none;
+            border-radius: 10px;
+            transition: $transition;
+            width: 50px;
+            padding: .5rem;
+            margin: .3rem;
+
+            &:hover {
+                box-shadow: 0 0 5px #000;
+                transition: $transition;
+            }
+
+            &:active {
+                box-shadow: inset 0 0 5px #000;
+                transition: $transition;
+            }
+        }
+    }
+
+    .replier_fieldset {
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        padding: .3rem;
+        transition: $transition;
+        margin-top: 1rem;
+
+        &:hover {
+            border: 1px solid $replier-fieldset-border;
+
+            .replier_legend {
+                color: #000;
+            }
+        }
+
+        .replier_legend {
+            color: #a9a9a9;
+            padding: .3rem;
+            font-weight: bold;
+            transition: $transition;
+        }
+
+        .replier_icon_btn {
+            cursor: pointer;
+            margin: auto .3rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            padding: .2rem .5rem;
+            transition: $transition;
+            background-color: $inputField-color;
+
+            &:hover {
+                color: #fff;
+                background-color: $deleteBtn-color;
+                transition: $transition;
+            }
+        }
+
+        .delete {
+            opacity: 0;
+        }
+
+        &:hover {
+            .delete {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* ========== media queries for small devices ========== */
+@media screen and (max-width: 600px) {
+    .replies_div {
+
+        .reply_form {
+            width: 100%;
+        }
+    }
+}

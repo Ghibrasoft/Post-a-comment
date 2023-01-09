@@ -1,0 +1,18 @@
+@import './style/variables.scss';
+@import './style/postComments/PostComments.scss';
+@import './style/SingleComment/SingleComment.scss';
+@import './style/replies/Replies.scss';
+
+.container {
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+
+    .comments_div {
+        margin-top: 5rem;
+        padding: 1rem;
+        width: 100%;
+        border: 1px solid $formGeneral-color;
+        border-radius: 10px;
+    }
+}

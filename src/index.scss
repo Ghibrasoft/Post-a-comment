@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital@0;1&display=swap');
+@import './style/variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: $font-Ubuntu;
+}

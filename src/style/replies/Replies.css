@@ -1,0 +1,104 @@
+/* ===== font styling ===== */
+/* ===== transitions ===== */
+/* ===== colors ===== */
+/* ===== div styling ===== */
+.replies_div .reply_form {
+  display: flex;
+  width: 500px;
+  height: 100px;
+  margin-top: 1rem;
+}
+.replies_div .reply_form .reply_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+}
+.replies_div .reply_form .reply_inputs .replier_name_input,
+.replies_div .reply_form .reply_inputs .replier_textarea {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  background-color: #F5F5F5;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0.3rem;
+  transition: 0.3s ease;
+}
+.replies_div .reply_form .reply_inputs .replier_name_input:focus,
+.replies_div .reply_form .reply_inputs .replier_textarea:focus {
+  background-color: #fff;
+  box-shadow: 0 0 5px #1E90FF;
+  transition: 0.3s ease;
+}
+.replies_div .reply_form .reply_inputs .replier_textarea {
+  height: 100%;
+}
+.replies_div .reply_form .addReply_btn {
+  cursor: pointer;
+  background-color: #1E90FF;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  width: 50px;
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+.replies_div .reply_form .addReply_btn:hover {
+  box-shadow: 0 0 5px #000;
+  transition: 0.3s ease;
+}
+.replies_div .reply_form .addReply_btn:active {
+  box-shadow: inset 0 0 5px #000;
+  transition: 0.3s ease;
+}
+.replies_div .replier_fieldset {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 0.3rem;
+  transition: 0.3s ease;
+  margin-top: 1rem;
+}
+.replies_div .replier_fieldset:hover {
+  border: 1px solid #00BFFF;
+}
+.replies_div .replier_fieldset:hover .replier_legend {
+  color: #000;
+}
+.replies_div .replier_fieldset .replier_legend {
+  color: #a9a9a9;
+  padding: 0.3rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.replies_div .replier_fieldset .replier_icon_btn {
+  cursor: pointer;
+  margin: auto 0.3rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  transition: 0.3s ease;
+  background-color: #F5F5F5;
+}
+.replies_div .replier_fieldset .replier_icon_btn:hover {
+  color: #fff;
+  background-color: #DC143C;
+  transition: 0.3s ease;
+}
+.replies_div .replier_fieldset .delete {
+  opacity: 0;
+}
+.replies_div .replier_fieldset:hover .delete {
+  opacity: 1;
+}
+
+/* ========== media queries for small devices ========== */
+@media screen and (max-width: 600px) {
+  .replies_div .reply_form {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Replies.css.map */

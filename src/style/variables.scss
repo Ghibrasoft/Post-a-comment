@@ -1,0 +1,28 @@
+/* ===== font styling ===== */
+$font-Ubuntu: 'Ubuntu', sans-serif;
+$font-Kaushan: 'Kaushan Script', cursive;
+$font-size: 1rem;
+$inputText-padding: .3rem;
+
+
+/* ===== transitions ===== */
+$transition: .3s ease;
+
+
+/* ===== colors ===== */
+$bg-color: #fff;
+$btn-color: #1E90FF;
+$editBtn-color: #FFA500;
+$deleteBtn-color: #DC143C;
+$formGeneral-color: #1E90FF; 
+$inputField-color: #F5F5F5;
+$replier-fieldset-border: #00BFFF;
+
+
+/* ===== div styling ===== */
+%centerFlexDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,112 @@
+@import '../variables.scss';
+
+.postComments_div {
+    margin-top: 2rem;
+
+    .comments_form {
+
+        .post_btn {
+            border: none;
+        }
+
+        .comments_form_div {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            width: 40%;
+
+            .post_btn {
+                cursor: pointer;
+                background-color: $btn-color;
+                color: #fff;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                width: 80px;
+                height: 40px;
+                font-weight: bold;
+                font-family: $font-Ubuntu;
+                text-transform: uppercase;
+                transition: $transition;
+
+                &:hover {
+                    box-shadow: 0 0 5px #000;
+                    transition: $transition;
+                }
+
+                &:active {
+                    box-shadow: inset 0 0 5px #000;
+                    transition: $transition;
+                }
+            }
+
+            .comments_inputs_div {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                .comments_input,
+                .comments_textarea {
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    resize: none;
+                    background-color: $inputField-color;
+                    font-family: $font-Ubuntu;
+                    font-size: $font-size;
+                    padding: $inputText-padding;
+                    transition: $transition;
+
+                    &:focus {
+                        background-color: #fff;
+                        box-shadow: 0 0 5px $formGeneral-color;
+                        transition: $transition;
+                    }
+                }
+                .comments_textarea {
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+/* ========== media queries for large devices ========== */
+@media screen and (max-width: 1024px) {
+    .postComments_div {
+
+        .comments_form {
+
+            .comments_form_div {
+                width: 70%;
+
+                .comments_inputs_div {
+
+                    .comments_textarea {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ========== media queries for small devices ========== */
+@media screen and (max-width: 600px) {
+    .postComments_div {
+
+        .comments_form {
+
+            .comments_form_div {
+                width: 100%;
+
+                .comments_inputs_div {
+
+                    .comments_textarea {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

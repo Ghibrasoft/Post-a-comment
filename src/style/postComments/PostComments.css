@@ -1,0 +1,83 @@
+/* ===== font styling ===== */
+/* ===== transitions ===== */
+/* ===== colors ===== */
+/* ===== div styling ===== */
+.postComments_div {
+  margin-top: 2rem;
+}
+.postComments_div .comments_form .post_btn {
+  border: none;
+}
+.postComments_div .comments_form .comments_form_div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 40%;
+}
+.postComments_div .comments_form .comments_form_div .post_btn {
+  cursor: pointer;
+  background-color: #1E90FF;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.postComments_div .comments_form .comments_form_div .post_btn:hover {
+  box-shadow: 0 0 5px #000;
+  transition: 0.3s ease;
+}
+.postComments_div .comments_form .comments_form_div .post_btn:active {
+  box-shadow: inset 0 0 5px #000;
+  transition: 0.3s ease;
+}
+.postComments_div .comments_form .comments_form_div .comments_inputs_div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.postComments_div .comments_form .comments_form_div .comments_inputs_div .comments_input,
+.postComments_div .comments_form .comments_form_div .comments_inputs_div .comments_textarea {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  background-color: #F5F5F5;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  padding: 0.3rem;
+  transition: 0.3s ease;
+}
+.postComments_div .comments_form .comments_form_div .comments_inputs_div .comments_input:focus,
+.postComments_div .comments_form .comments_form_div .comments_inputs_div .comments_textarea:focus {
+  background-color: #fff;
+  box-shadow: 0 0 5px #1E90FF;
+  transition: 0.3s ease;
+}
+.postComments_div .comments_form .comments_form_div .comments_inputs_div .comments_textarea {
+  height: 100px;
+}
+
+/* ========== media queries for large devices ========== */
+@media screen and (max-width: 1024px) {
+  .postComments_div .comments_form .comments_form_div {
+    width: 70%;
+  }
+  .postComments_div .comments_form .comments_form_div .comments_inputs_div .comments_textarea {
+    height: 100px;
+  }
+}
+/* ========== media queries for small devices ========== */
+@media screen and (max-width: 600px) {
+  .postComments_div .comments_form .comments_form_div {
+    width: 100%;
+  }
+  .postComments_div .comments_form .comments_form_div .comments_inputs_div .comments_textarea {
+    height: 100px;
+  }
+}/*# sourceMappingURL=PostComments.css.map */

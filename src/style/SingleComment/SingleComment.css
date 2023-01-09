@@ -1,0 +1,93 @@
+/* ===== font styling ===== */
+/* ===== transitions ===== */
+/* ===== colors ===== */
+/* ===== div styling ===== */
+.singleComment_form .singleComment_fieldset {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 0.3rem;
+  transition: 0.3s ease;
+  margin-top: 1rem;
+  word-break: break-all;
+}
+.singleComment_form .singleComment_fieldset:hover {
+  border: 1px solid #1E90FF;
+}
+.singleComment_form .singleComment_fieldset:hover .icon_btns_div {
+  transition: 0.3s ease;
+  opacity: 1;
+}
+.singleComment_form .singleComment_fieldset:hover .singleComment_legend {
+  color: #000;
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset:hover .singleComment_legend .date {
+  color: #000;
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .edit_input_field {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  background-color: #F5F5F5;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0.3rem;
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .edit_input_field:focus {
+  background-color: #fff;
+  box-shadow: 0 0 5px #1E90FF;
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .singleComment_legend {
+  color: #a9a9a9;
+  font-weight: bold;
+  padding: 0.3rem;
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .singleComment_legend .date {
+  font-style: italic;
+  color: #a9a9a9;
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .icon_btns_div {
+  transition: 0.3s ease;
+  opacity: 0;
+  margin-top: 0.5rem;
+}
+.singleComment_form .singleComment_fieldset .icon_btns_div .icon_btn {
+  display: inline-flex;
+  cursor: pointer;
+  margin: auto 0.3rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  transition: 0.3s ease;
+  background-color: #F5F5F5;
+}
+.singleComment_form .singleComment_fieldset .icon_btns_div .reply {
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .icon_btns_div .reply:hover {
+  color: #fff;
+  background-color: #1E90FF;
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .icon_btns_div .edit {
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .icon_btns_div .edit:hover {
+  color: #fff;
+  background-color: #FFA500;
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .icon_btns_div .delete {
+  transition: 0.3s ease;
+}
+.singleComment_form .singleComment_fieldset .icon_btns_div .delete:hover {
+  color: #fff;
+  background-color: #DC143C;
+  transition: 0.3s ease;
+}/*# sourceMappingURL=SingleComment.css.map */
